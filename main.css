@@ -1,0 +1,441 @@
+/* Reglas css generales */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Header de la web */
+
+#header {
+    height: 32vh;
+    background-color: #fff;
+    position: relative;
+    font-family: Raleway;
+}
+
+
+/* Banner negro */
+
+.banner-black {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    color: white;
+    background-color: black;
+}
+
+.banner-black h2 {
+    margin-right: 2.5rem;
+    font-weight: bold;
+}
+
+.banner-black a {
+    width: 10%;
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 1rem;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* Banner blanco links */
+
+.banner-white {
+    display: block;
+    height: 30px;
+    background-color: #eee;
+    font-family: Montserrat;
+}
+
+.wrap-banner {
+    width: 90%;
+    margin: 0px auto;
+}
+
+.banner-white>.wrap-banner ul {
+    float: left;
+    margin-right: 2rem;
+}
+
+.wrap-banner ul:nth-child(2) {
+    float: right;
+}
+
+.wrap-banner ul:nth-child(1) li {
+    width: 300px;
+}
+
+.banner-white>.wrap-banner ul li a {
+    color: black;
+}
+
+.banner-white>.wrap-banner ul:nth-child(1) li a:hover {
+    text-decoration: underline;
+}
+
+.banner-white>.wrap-banner ul li {
+    float: left;
+    list-style: none;
+    margin-left: 1rem;
+    line-height: 30px;
+    font-size: 13px;
+}
+
+.banner-white>.wrap-banner ul li i {
+    margin-right: 10px;
+}
+
+
+/* Contenido de menú y pestañas */
+
+.content-menu {
+    padding-top: 1rem;
+    margin-bottom: 5.5rem;
+}
+
+#logo {
+    font-family: Luckiest Guy;
+    font-style: italic;
+    letter-spacing: 2px;
+    font-size: 35px;
+    float: left;
+    width: 20%;
+}
+
+#search-bar {
+    width: 50%;
+    float: left;
+    /*  border:1px solid black;*/
+    margin: auto;
+    padding-top: 25px;
+}
+
+#search-bar input[type="text"] {
+    width: 85%;
+    height: 1rem;
+    border: 1px solid gray;
+    background-color: #eee;
+    float: left;
+    margin-left: 1.5rem;
+    padding: 10px;
+}
+
+#search-bar .btn-search {
+    height: 38px;
+    width: 2.5rem;
+    margin-left: -5px;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+}
+
+#search-bar i {
+    color: white;
+    font-size: 15px;
+}
+
+#profile {
+    float: right;
+    width: 20%;
+    padding-top: 25px;
+}
+
+#profile .profile-div {
+    display: block;
+    font-size: 14px;
+    font-family: Montserrat;
+    float: left;
+    margin-right: 12px;
+}
+
+#profile .profile-div span {
+    display: block;
+}
+
+#profile .profile-div span i {
+    margin-left: 5px;
+}
+
+#profile .icons {
+    margin-top: 2px;
+    font-size: 30px;
+}
+
+#profile .icons a {
+    color: black;
+}
+
+
+/* Menu de las pestañas */
+
+#menu {
+    height: 2rem;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+#menu .wrap-banner ul {
+    display: flex;
+    justify-content: center;
+    line-height: 2rem;
+}
+
+#menu .wrap-banner ul li {
+    list-style: none;
+    text-transform: uppercase;
+    font-family: Montserrat;
+    text-align: center;
+}
+
+#menu .wrap-banner ul li a {
+    font-size: 13px;
+    color: black;
+}
+
+#menu .wrap-banner ul li a:hover {
+    background-color: gray;
+    color: white;
+    padding: 10px;
+}
+
+
+/* Estilos menu promoción */
+
+#menu-promo {
+    display: flex;
+    justify-content: center;
+    background-color: #373b3d;
+    max-width: 1130px;
+    margin: auto;
+    font-family: Raleway;
+}
+
+.promo-item {
+    width: 30%;
+    margin: 5px;
+    text-align: center;
+    border-right: 1px solid white;
+}
+
+.promo-item:nth-child(3) {
+    border: none;
+}
+
+.promo-item a {
+    color: white;
+}
+
+.promo-item a h2 {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.promo-item a h3 {
+    font-size: 14px;
+    font-family: Montserrat;
+}
+
+.wp-float {
+    display: block;
+    position: fixed;
+    top: 50%;
+    right: 5%;
+}
+
+.wp-float span {
+    font-size: 2.5rem;
+    font-family: Raleway;
+}
+
+.wp-float span i {
+    margin-left: 20px;
+}
+
+.wp-float:hover {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+
+/* Estilos banner de imagenes */
+
+#slide-images {
+    margin-top: 2rem;
+    width: 100%;
+    height: 35rem;
+    background-image: url("https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+    background-position-y: -180px;
+    background-repeat: none;
+}
+
+
+/* Estilos sección de promociones */
+
+.grid-big {
+    width: 90%;
+    margin: auto;
+    margin-top: 3rem;
+}
+
+.grid-big h3 {
+    display: block;
+    width: 15%;
+    text-align: center;
+    margin: auto;
+    margin-top: -10px;
+    background-color: white;
+    text-transform: uppercase;
+    font-family: Montserrat;
+}
+
+.grid-big hr {
+    margin-top: 15px;
+}
+
+.wrap-grid {
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.grid-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.left-grid {
+    flex-basis: 50%;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.grid-content .left-grid img {
+    width: 100%;
+}
+
+.rigth-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-basis: 50%;
+    margin-top: 1rem;
+}
+
+.image-wrap {
+    background-color: #ccc;
+    height: 70%;
+    overflow: hidden;
+}
+
+.product {
+    flex-grow: 1;
+    flex-basis: 200px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+}
+
+.product img {
+    width: 90%;
+    padding: 10px;
+}
+
+.rigth-grid .product:nth-child(3) img {
+    width: 80%;
+    margin-left: 1rem;
+}
+
+.rigth-grid .product:nth-child(4) img {
+    margin-top: 4rem;
+}
+
+.product-info {
+    font-family: Montserrat;
+    padding: 5px 1rem;
+    font-size: 15px;
+}
+
+.product-info h4 {
+    font-family: Raleway;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.product-info a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: underline;
+    color: green;
+}
+
+
+/* Estilos sección de zapatos */
+
+.grid-small {
+    width: 90%;
+    margin: auto;
+    margin-top: 3rem;
+}
+
+.grid-small h3 {
+    display: block;
+    width: 12%;
+    text-align: center;
+    margin: auto;
+    margin-top: -10px;
+    background-color: white;
+    text-transform: uppercase;
+    font-family: Montserrat;
+}
+
+.grid-small hr {
+    margin-top: 15px;
+}
+
+.list-products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-basis: 50%;
+    margin-top: 1rem;
+}
+
+
+/* Estilos Sección de ropa */
+
+article:nth-child(1) img {
+    width: 100%;
+}
+
+article:nth-child(3) img {
+    margin-top: 1rem;
+}
+
+.rigth-grid .clothe:nth-child(4) img {
+    margin-top: 0px;
+}
+
+.clothe {
+    height: 330px;
+}
